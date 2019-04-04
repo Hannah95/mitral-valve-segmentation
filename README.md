@@ -4,8 +4,7 @@
 
 For running code for mitral valve **detection** and **highlighting**:  <br> <br>
 
-`rnmf(method, #videos, varargin)` <br> <br>
-
+`rnmf(method, #videos, varargin)` <br> 
 where  `method` is the respective method to run, that has to be listed in `rnmf.m`. <br>
 `#videos` is the number of videos the method as to be applied on.<br>
 Example: `rnmf('robustNMF',10)`<br>
