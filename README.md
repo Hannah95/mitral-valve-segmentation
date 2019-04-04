@@ -2,41 +2,36 @@
 
 ## run in main.m:
 
-For running code for mitral valve **detection** and **highlighting**: 
+For running code for mitral valve **detection** and **highlighting**:  <br> <br>
 
-`rnmf(method, #videos, varargin)`
+`rnmf(method, #videos, varargin)` <br> <br>
 
-where  `method` is the respective method to run, that has to be listed in `rnmf.m`. 
-`#videos` is the number of videos the method as to be applied on.
-Example: `rnmf('robustNMF',10)`
+where  `method` is the respective method to run, that has to be listed in `rnmf.m`. <br>
+`#videos` is the number of videos the method as to be applied on.<br>
+Example: `rnmf('robustNMF',10)`<br>
+If desired, the standard variable values can be replaced by others:<br>
+Example: `rnmf('robustNMF',10,sparsity,[0,0.1])`<br>
 
-If desired, the standard variable values can be replaced by others:
-Example: `rnmf('robustNMF',10,sparsity,[0,0.1])`
+ <br> <br>
+For running code for mitral valve **segmentation**: <br> <br>
 
-
-For running code for mitral valve **segmentation**: 
-
-`segment(method, rnmf method, ids, varargin)`
-
-where  `method` is the respective method to run, that has to be listed in `segment.m`. 
-`rnmf method` should include the name of the method on whose results (that are maked with IDs) the segmentation should run. `ids` identify the input data for the segmentation.
-Example: `rnmf('segmentCVPlus','robustNMF',[1,2,3,7])`
-
-If desired, the standard variable values can be replaced by others:
-Example: `rnmf('segmentCVPlus','robustNMF',[1,2,3,7],'rank',5)`
+`segment(method, rnmf method, ids, varargin)` <br> 
+where  `method` is the respective method to run, that has to be listed in `segment.m`. <br>
+`rnmf method` should include the name of the method on whose results (that are maked with IDs) the segmentation should run. `ids` identify the input data for the segmentation.<br>
+Example: `rnmf('segmentCVPlus','robustNMF',[1,2,3,7])`<br>
+If desired, the standard variable values can be replaced by others:<br>
+Example: `rnmf('segmentCVPlus','robustNMF',[1,2,3,7],'rank',5)`<br>
 
 
+ <br> <br>
 
+For running code for mitral valve **segmentation in one step**: <br> <br>
 
-For running code for mitral valve **segmentation in one step**: 
-
-`dual(method, #videos, varargin)`
-
-where  `method` is the respective method to run, that has to be listed in `dual.m`. 
-`#videos` is the number of videos the method as to be applied on.
-Example: `dual('robustNMF_GL',50)`
-
-If desired, the standard variable values can be replaced by others:
-Example: `dual('robustNMF_GL',50,'epsilon',[0.1,0.9,1.5])`
+`dual(method, #videos, varargin)`<br>
+where  `method` is the respective method to run, that has to be listed in `dual.m`. <br>
+`#videos` is the number of videos the method as to be applied on.<br>
+Example: `dual('robustNMF_GL',50)`<br>
+If desired, the standard variable values can be replaced by others:<br>
+Example: `dual('robustNMF_GL',50,'epsilon',[0.1,0.9,1.5])`<br>
 
 
